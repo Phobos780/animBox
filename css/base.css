@@ -1,0 +1,69 @@
+
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Ubuntu, Helvetica, Verdana, Arial, sans-serif;
+  padding: 25px
+}
+
+
+.container {
+  padding: 80px 20px;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background: coral;
+  margin: 0 auto;
+  animation-name: animate-box; 
+  animation-duration: 4s;/*durata di animazione*/
+  animation-delay: 0.5ms;/*dopo quanto animazione deve partire*/
+  animation-timing-function: ease-out; 
+  animation-fill-mode: forwards; 
+}
+
+@keyframes animate-box {/*le condizioni della animazione*/
+  0%{
+    background: coral;
+    transform: rotate(0deg);
+    border-radius: 0;
+
+  }
+
+  25%{
+    background: lime;
+    transform: rotate(45deg);
+    border-radius: 50% 0 0 0;
+
+  }
+
+  50%{
+    background: green;
+    transform: rotate(90deg);
+    border-radius: 50% 50% 0 0;
+
+  }
+
+  75%{
+    background: red;
+    transform: rotate(135deg);
+    border-radius: 50% 50% 50% 0;
+
+  }
+
+  100%{
+    background: darksalmon;
+    transform: rotate(180deg);
+    border-radius: 50%;
+
+  }
+
+}
